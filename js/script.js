@@ -1,3 +1,22 @@
+const checkbox = document.getElementById('check');
+const menuLinks = document.querySelectorAll('[data-close-menu]');
+const body = document.body;
+
+menuLinks.forEach((menuLink) => {
+    menuLink.addEventListener('click', () => {
+        checkbox.checked = false;
+        body.classList.remove('menu-open');
+    });
+});
+
+checkbox.addEventListener('change', function() {
+    if (checkbox.checked) {
+        body.classList.add('menu-open');
+    } else {
+        body.classList.remove('menu-open');
+    }
+});
+
 var slideIndex = 1;
 showSlides(slideIndex);
 
@@ -25,21 +44,4 @@ function showSlides(n) {
     dots[slideIndex-1].className += " active";
 }
 
-const checkbox = document.getElementById('check');
-const menuLinks = document.querySelectorAll('[data-close-menu]');
-const body = document.body;
 
-menuLinks.forEach((menuLink) => {
-    menuLink.addEventListener('click', () => {
-        checkbox.checked = false;
-        body.classList.remove('menu-open'); // Asegura que la clase se elimine al cerrar el menú
-    });
-});
-
-checkbox.addEventListener('change', function() {
-    if (checkbox.checked) {
-        body.classList.add('menu-open');
-    } else {
-        body.classList.remove('menu-open');
-    }
-});
