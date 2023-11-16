@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,6 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
+
 <body>
     <header>
         <nav>
@@ -35,10 +37,14 @@
                 </div>
                 <ul>
                     <li class="eleccion-idioma">
-                        <a href="#" class="us"><p class="idioma">English</p></a>
+                        <a href="#" class="us">
+                            <p class="idioma">English</p>
+                        </a>
                     </li>
                     <li class="eleccion-idioma">
-                        <a href="#" class="es"><p class="idioma">Español</p></a>
+                        <a href="#" class="es">
+                            <p class="idioma">Español</p>
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -63,49 +69,62 @@
             <div class="textos">
                 <div class="texto txt_almacen">
                     <p class="txt">ALMACEN <br><br>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque hic praesentium, quaerat repellendus culpa dolorem enim aspernatur harum recusandae omnis. Dolore officia iste, blanditiis repellendus sunt perspiciatis delectus fuga pariatur est. Quam aliquam vitae quidem, pariatur officia voluptas officiis deserunt cupiditate ea eum et dolore alias atque modi hic. Ad, magnam voluptatum eius recusandae molestias vero, cum ipsa fugiat ducimus assumenda necessitatibus id natus eveniet pariatur. Praesentium dicta mollitia tempore saepe, iusto illo minima, sapiente commodi ipsam laudantium enim repellat et? Enim consectetur in, ipsa tenetur est vitae optio, velit iusto quis, officia nulla fuga. Ipsa inventore dolorem perferendis sequi sapiente, autem fugit optio quo illum ea voluptatem laboriosam dolores a explicabo repudiandae mollitia maxime harum ab earum tenetur nobis?</p>
+                        Ofrecemos un servicio especializado en Gestión de Almacenes, encargándonos de la logística
+                        interna de paquetes, lotes, camiones en almacén, plataformas y estantes. Nuestra plataforma
+                        facilita un control eficiente, optimizando la distribución de productos y garantizando una
+                        gestión organizada. Con nosotros, los clientes pueden confiar en una administración completa de
+                        su inventario, asegurando un funcionamiento fluido y eficaz de su almacén.</p>
                 </div>
                 <div class="texto txt_transporte">
                     <p class="txt">TRANSPORTE <br><br>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro nihil beatae odit itaque, eius alias nesciunt inventore at officia in, tenetur quam quia ipsam nisi facilis similique. Voluptatibus facere consequatur expedita est tempora dolor molestiae ex non voluptates, quae suscipit et harum autem iusto, necessitatibus vel molestias quod fugit eius. Amet dolorum reiciendis dignissimos accusantium recusandae praesentium eum temporibus id et doloribus debitis iste animi illum officiis, quibusdam labore possimus. Itaque unde similique aspernatur et quaerat accusantium quos at, nostrum sint facilis corporis ipsam pariatur a dicta tempora tempore aut quas natus animi maiores aliquam molestias ratione quia. Iste saepe dolore incidunt soluta hic quia neque perspiciatis debitis, aut exercitationem. Non sed obcaecati excepturi veniam harum, libero eos possimus debitis.</p>
+                        Ofrecemos un servicio integral de Gestión de Transporte, encargándonos de la administración de
+                        camiones y choferes. Nuestro enfoque se centra en la eficiencia, generando rutas óptimas para
+                        garantizar entregas eficaces. Con nosotros, los clientes pueden confiar en una gestión logística
+                        completa, asegurando un transporte eficiente y una administración profesional de cada aspecto
+                        del proceso de entrega.</p>
                 </div>
                 <div class="texto txt_paquetes">
                     <p class="txt">PAQUETE <br><br>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae numquam, reprehenderit adipisci repellat deleniti ipsum eaque ipsa quasi ea hic aspernatur! Iste, animi. Odio quibusdam asperiores molestias provident. Ratione, odit tempore ad dicta temporibus deserunt nam! Quae ad dicta dignissimos maxime iusto soluta accusamus sunt tenetur mollitia nesciunt, eligendi minima ipsum facere ipsa quia repellendus atque asperiores illum ut veniam optio blanditiis. Consectetur, voluptatum obcaecati tenetur facere nam veniam, inventore cupiditate, sapiente ullam vitae nostrum aspernatur atque. Suscipit culpa repellendus voluptatum ratione at ex dignissimos, soluta earum ipsum sed cumque et eius! Odio, numquam? Impedit est necessitatibus quia nam! Sint, perspiciatis qui ab beatae recusandae voluptatem modi, et reiciendis perferendis impedit aspernatur. Recusandae nostrum voluptas corrupti fuga temporibus, sint repudiandae.</p>
+                        Nuestro servicio de Rastreo de Paquetes permite a los clientes obtener información sobre el
+                        estado de sus envíos, así como conocer datos del conductor encargado de la entrega. A través de
+                        una plataforma fácil de usar, ofrecemos actualizaciones sobre el progreso del paquete y una
+                        estimación de la ruta a seguir desde nuestro almacén hasta su domicilio. Simplificamos el
+                        seguimiento para mantener a nuestros clientes informados y confiados en la gestión de sus
+                        envíos.</p>
                 </div>
             </div>
         </div>
     </main>
 
     <script>
-        $(document).ready(function() {
-        let elementoVisible = null;
+        $(document).ready(function () {
+            let elementoVisible = null;
 
-            $('.ges_almacenes').hover(function() {
+            $('.ges_almacenes').hover(function () {
                 if (elementoVisible) {
-                    elementoVisible.fadeToggle('slow', function() {
+                    elementoVisible.fadeToggle('slow', function () {
                         $('.txt_almacen').fadeIn('slow');
-                        
+
                     });
                 } else {
                     $('.txt_almacen').fadeToggle('200');
                 }
             });
 
-            $('.ges_transporte').hover(function() {
+            $('.ges_transporte').hover(function () {
                 if (elementoVisible) {
-                    elementoVisible.fadeToggle('slow', function() {
+                    elementoVisible.fadeToggle('slow', function () {
                         $('.txt_transporte').fadeIn('slow');
                     });
                 } else {
                     $('.txt_transporte').fadeToggle('200');
-                    
+
                 }
             });
 
-            $('.ras_paquetes').hover(function() {
+            $('.ras_paquetes').hover(function () {
                 if (elementoVisible) {
-                    elementoVisible.fadeToggle('slow', function() {
+                    elementoVisible.fadeToggle('slow', function () {
                         $('.txt_paquetes').fadeIn('slow');
                     });
                 } else {
@@ -114,7 +133,7 @@
             });
         });
     </script>
-    
+
     <footer class="footer">
         <div class="container-footer">
             <div class="empresa-container espacio">
@@ -136,9 +155,11 @@
                     <ul class="redes">
                         <li class="numero">+598 *** ***</li>
                         <li>
-                            <a href="https://www.youtube.com/watch?v=wUWMjdo9t6k&ab_channel=Temppo" target="_blank"><i class="red fa fa-youtube-play"></i></a>
+                            <a href="https://www.youtube.com/watch?v=wUWMjdo9t6k&ab_channel=Temppo" target="_blank"><i
+                                    class="red fa fa-youtube-play"></i></a>
                             <a href="https://www.instagram.com/" target="_blank"><i class="red fa fa-instagram"></i></a>
-                            <a href="https://uy.linkedin.com/" target="_blank"><i class="red fa fa-linkedin"></i></a><br>
+                            <a href="https://uy.linkedin.com/" target="_blank"><i
+                                    class="red fa fa-linkedin"></i></a><br>
                         </li>
                         <li class="email"> forksoftware.esi@gmail.com</li>
                     </ul>
@@ -148,4 +169,5 @@
     </footer>
     <script src="../js/script.js"></script>
 </body>
+
 </html>
